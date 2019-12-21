@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>stuList</title>
+    <style>
+        li{
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        班级：<input type="text" name="ClassName" id="clname" placeholder="请输入班级名称" />
+        <input type="button"  id="submit" value="提交" />
+        <ul id="ul">
+        </ul>
+    </div>
+    <script src="~/Content/scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#submit").click(function () {
+                $("#ul").empty();
+                var cname = $("#clname").val();
+                $.post("/Students/stuList", { "ClassName": cname }, function (data, status) {
+                    var list = $.parseJSON(data);
+                    console.log("list:" + list);
+                    for (var i = 0; i < list.length; i++) {
+                        var li = "<li>" +
+                            list[i].StudentName + "&nbsp;" +
+                            list[i].Gender + "&nbsp;" +
+                            list[i].Birthday +"&nbsp;"+
+                            list[i].ClassName +"&nbsp;"
+                            + "</li>"
+                        $("#ul").append(li);
+                    }
+                });
+            })
+        });
+    </script>
+</body>
+</html>

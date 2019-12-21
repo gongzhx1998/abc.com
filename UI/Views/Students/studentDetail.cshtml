@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+@using Models;
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StudentDetail</title>
+</head>
+<body>
+    <div> 
+        @{ 
+            students students = ViewBag.title; 
+            <table border="1" cellspacing="0" align="center" width="60%">
+                <tr>
+                    <td>ID</td>
+                    <td>@students.StudentId</td>
+                </tr>
+                <tr>
+                     <td>姓名</td>
+                     <td>@students.StudentName</td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td>@students.Gender</td>
+                </tr>
+                <tr>
+                    <td>年龄</td>
+                    <td>@students.Age</td>
+                </tr>
+                <tr>
+                    <td>生日</td>
+                    <td>@students.Birthday</td>
+                </tr>
+                <tr>
+                    <td>手机号</td>
+                    <td>@students.PhoneNumber</td>
+                </tr>
+                <tr>
+                    <td>地址</td>
+                    <td>@students.StudentAddress</td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

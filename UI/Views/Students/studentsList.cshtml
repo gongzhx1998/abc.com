@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+@using System.Web;
+@using System;
+@using Models;
+@using System.Collections.Generic;
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>studentsList</title>
+    <link href="~/Content/styles/studentsList.css" rel="stylesheet" />
+    <link href="~/Content/styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrap">
+        <h2>管理页面</h2>
+        @*<span>欢迎您：@Session["adminName"] </span>*@
+        @Html.Action("GetCurrentUser","sysAdmin")
+        @Html.ActionLink("注销", "SignOut", "sysAdmin")
+        @Html.ActionLink("根据班级查询","stuList","Students")
+        @{
+            List<students> s = ViewBag.mess;
+            <table border="1" width="80%">
+                <tr>
+                    <td>ID</td>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>更多操作</td>
+                </tr>
+                <tr>
+                    <td>@s[0].StudentId</td>
+                    <td>@s[0].StudentName</td>
+                    <td>@s[0].Gender</td>
+                    <td colspan="2"><a href="~/Students/studentDetail/?ID=@s[0].StudentId">查看更多</a>   <a href="#">删除</a></td>
+                    @*<td></td>*@
+                </tr>
+                <tr>
+                    <td>@s[1].StudentId</td>
+                    <td>@s[1].StudentName</td>
+                    <td>@s[1].Gender</td>
+                    <td colspan="2"><a href="~/Students/studentDetail/?ID=@s[1].StudentId">查看更多</a>   <a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td>@s[2].StudentId</td>
+                    <td>@s[2].StudentName</td>
+                    <td>@s[2].Gender</td>
+                    <td colspan="2"><a href="~/Students/studentDetail/?ID=@s[2].StudentId">查看更多</a>   <a href="#">删除</a></td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

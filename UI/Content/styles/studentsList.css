@@ -1,0 +1,11 @@
+﻿body {
+    border: 1px solid #fff;
+}
+#wrap {
+    width:960px;
+    border: 1px solid #fff;
+    margin: 10px auto;
+}
+table{
+    text-align:center;
+}

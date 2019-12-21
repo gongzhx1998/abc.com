@@ -1,0 +1,96 @@
+时间：2019/12/8 11:23:29
+控制器：Students
+动作方法：stuList
+“ClassName”附近有语法错误。
+
+时间：2019/12/8 12:31:47
+控制器：Students
+动作方法：stuLists
+“ClassName”附近有语法错误。
+
+时间：2019/12/8 12:31:51
+控制器：Students
+动作方法：stuLists
+“ClassName”附近有语法错误。
+
+时间：2019/12/8 12:33:13
+控制器：Students
+动作方法：stuLists
+“ClassName”附近有语法错误。
+
+时间：2019/12/8 12:33:16
+控制器：Students
+动作方法：stuLists
+“ClassName”附近有语法错误。
+时间：2019/12/8 12:36:43
+控制器：Students
+动作方法：stuList
+“ClassName”附近有语法错误。
+
+时间：2019/12/8 12:36:55
+控制器：Students
+动作方法：stuList
+“ClassName”附近有语法错误。
+
+时间:2019/12/14 12:02:26
+控制器:sysAdmin
+动作方法:Register
+错误信息“0”附近有语法错误。
+
+时间:2019/12/14 12:04:35
+控制器:sysAdmin
+动作方法:Register
+错误信息“0”附近有语法错误。
+
+时间:2019/12/14 12:06:16
+控制器:sysAdmin
+动作方法:Register
+错误信息“0”附近有语法错误。
+
+时间:2019/12/14 12:16:07
+控制器:sysAdmin
+动作方法:Register
+错误信息“0”附近有语法错误。
+
+时间:2019/12/14 22:11:27
+控制器:sysAdmin
+动作方法:Register
+错误信息列名 'sda' 无效。
+列名 'sda' 无效。
+
+时间:2019/12/14 22:12:02
+控制器:sysAdmin
+动作方法:Register
+错误信息列名 'sda' 无效。
+列名 'sda' 无效。
+
+时间:2019/12/14 22:13:58
+控制器:sysAdmin
+动作方法:Register
+错误信息列名 'xiaowang' 无效。
+
+时间:2019/12/14 22:14:30
+控制器:sysAdmin
+动作方法:Register
+错误信息列名 'xiaowang' 无效。
+
+时间:2019/12/14 23:02:43
+控制器:sysAdmin
+动作方法:Register
+错误信息列名 '王八蛋' 无效。
+
+时间:2019/12/14 23:04:45
+控制器:sysAdmin
+动作方法:Register
+错误信息列名 '小王' 无效。
+
+时间:2019/12/14 23:07:59
+控制器:sysAdmin
+动作方法:Register
+错误信息列名 '小王' 无效。
+
+时间:2019/12/15 9:23:43
+控制器:sysAdmin
+动作方法:AdminLogin
+错误信息数据库连接失败关键字 'and' 附近有语法错误。
+

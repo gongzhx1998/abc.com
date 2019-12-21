@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+@model Models.sysAdmin
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Resigter</title>
+    <link href="~/Content/styles/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/styles/Register.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container"> 
+        <div class="header row">
+            <div class="left col-xs-2">  
+            </div>
+            <div class="headermid col-xs-2"><h4>欢迎注册</h4></div>
+            <div class="right col-xs-2 col-xs-push-5">
+                <div class="content">已有账号？@Html.ActionLink("请登录", "AdminLogin", "sysAdmin")</div>
+            </div>
+        </div>
+        <div class="mid row">
+            <form action="~/sysAdmin/Register" method="post">
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        请输入ID:
+                    </div>
+                    <div class="col-xs-8">
+                        <input type="text" name="LoginId" value="" placeholder="ID用于登录"/>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        请输入用户名:
+                    </div>
+                    <div class="col-xs-8">
+                        <input type="text" name="AdminName" value="" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        请输入密码:
+                    </div>
+                    <div class="col-xs-8">
+                        <input type="password" name="LoginPwd" value="" />
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="注册" id="tj" class="btn btn-info" />
+            </form>           
+        </div>
+    </div>
+</body>
+</html>

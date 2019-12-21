@@ -1,0 +1,32 @@
+﻿.header{
+    border:1px solid transparent;
+    height:110px;
+}
+.header .left {
+        width: 160px;
+        height: 50px;
+        margin-top: 13px;
+        background: url(../img/icon.png);
+        background-position-x: 0px;
+        background-position-y: 0px
+}
+.header .right {
+    margin-top: 10px;
+}
+.header .headermid {
+        margin-top: 21px;
+}
+.mid{
+    width:500px;
+    margin:0 auto;
+    background-color:rgb(255,255,250);
+}
+.mid #tj{
+    width:356px;
+    color:#fff;
+    margin-top:30px;
+    /*background-color:red;*/
+    border-radius:4px;
+    border:none;
+    padding:10px 0px 10px 0px;
+}

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+<head>
+    <link href="~/Content/styles/AdminLogin.css" rel="stylesheet" />
+    <link href="~/Content/styles/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>管理员登陆</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <form action="~/sysAdmin/AdminLogin" method="post">
+                <div class="row form-group">
+                    <div class="col-xs-4">
+                        <label for="">用户ID：</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input type="text" name="loginId" value="" />
+                    </div>
+                </div>
+                <br />
+                <div class="row form-group">
+                    <div class="col-sm-4"><label for="">密码：</label></div>
+                    <div class="col-sm-8">
+                        <input type="password" name="loginPwd" value="" />
+                    </div>
+                </div>
+                <br />
+                <div class="footer">
+                    @Html.ActionLink("点击去注册", "Register", "sysAdmin")
+                    <input type="submit" name="name" value="登陆" id="tj" class="btn btn-info"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
